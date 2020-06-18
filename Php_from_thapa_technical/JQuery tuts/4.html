@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced Selectors</title>
+    </head>
+    <body>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <div style="width:50%; margin:auto;" id="list">
+            <ol type="1" style="list-style:none">
+                <li>index 0: Javascript</li>
+                <li>index 1: Angular</li>
+                <li>index 2: Bootstrap</li>
+                <li>index 3: Jquery</li>
+                <li>index 4: PHP</li>
+            </ol>
+        </div>
+        <br><br>
+            <div style="width:50%; margin:auto;" id="list2">
+            <ol type="1" style="list-style:none">
+                <li>index 0: Javascript</li>
+                <li>index 1: Angular</li>
+                <li>index 2: Bootstrap</li>
+                <li>index 3: Jquery</li>
+                <li>index 4: PHP</li>
+            </ol>
+
+        </div>  
+        <button id="button">Click me</button>
+        <script>
+            $(document).ready(function(){
+                $('#button').click(function(){
+                    // $(this).css("backgroundColor","red");
+                    // $('#list').css("color","blue");
+                    // $('#list').css("backgroundColor","yellow");
+                    //$('[type]').hide('slow');
+                    //$('li:even').css("color","red");
+                    //$('li:odd').css("color","red");
+                    // $('li:first-child').css("color","red");
+                    //$('li:last-child').css("color","red");
+                    //$('li:nth-child(2)').css("color","red");
+                    //$('li:nth-last-child(2)').css("color","red");
+                    $('#list2 li:nth-last-child(2)').css("color","red");
+
+                    
+                });
+            });
+        </script>
+    </body>
+</html>

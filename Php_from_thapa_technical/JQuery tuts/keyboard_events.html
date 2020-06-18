@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyboard Events</title>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+        <form>
+            <label for='anish'>Username:</label>
+            <input type="text" name="anish" id="anish">
+        </form>
+        
+        <script>
+            $(document).ready(function(){
+                // $('input').keyup(function(){
+                //     $(this).css("backgroundColor","red");
+                // });
+                $('input').keydown(function(){
+                    $(this).css("backgroundColor","red");
+                });
+                // $('input').keypress(function(){
+                //     $(this).css("backgroundColor","red");
+                // });
+                
+                
+            });
+        </script>
+    </body>
+</html>

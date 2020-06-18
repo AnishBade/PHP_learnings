@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Double click event</title>
+    </head>
+    <body>
+cccc        <style>
+            .main{
+                display: flex;
+
+            }
+            .red{
+                width:100px;
+                height:100px;
+                border:1px solid black;
+
+            }
+            .blue{
+                width:100px;
+                height:100px;
+                border:1px solid black;
+            }
+        </style>
+
+        <div class="main">
+            <div class="red"></div>
+             <div class="red"></div>
+              <div class="red"></div>
+               <div class="blue"></div>
+                <div class="blue"></div>
+                 <div class="blue"></div>
+
+        </div>  
+        <button id="button">Show/hide</button>  
+        <script>
+            $(document).ready(function(){
+                $('.red').css('backgroundColor','red'); 
+                $('.blue').css('backgroundColor','blue'); 
+                                                                                    
+                $('#button').click(function(){
+                       $('.red,.blue').hide('slow'); 
+                });
+                $('#button').dblclick(function(){
+                       $('.blue,.red').show('slow'); 
+                });
+
+
+                
+
+            });
+        </script>
+    </body>
+</html>

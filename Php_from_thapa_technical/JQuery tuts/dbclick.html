@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Double click event</title>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            .main{
+                display: flex;
+
+            }
+            .red{
+                width:100px;
+                height:100px;
+                border:1px solid black;
+
+            }
+            .blue{
+                width:100px;
+                height:100px;
+                border:1px solid black;
+            }
+        </style>
+
+        <div class="main">
+            <div class="red"></div>
+             <div class="red"></div>
+              <div class="red"></div>
+               <div class="blue"></div>
+                <div class="blue"></div>
+                 <div class="blue"></div>
+
+        </div>  
+        <button id="button">Show/hide</button>  
+        <script>
+            $(document).ready(function(){
+                $('#button').click(function(){
+                       $('.red').css('backgroundColor','red'); 
+                });
+                $('#button').dblclick(function(){
+                       $('.blue').css('backgroundColor','blue'); 
+                });
+
+
+                
+
+            });
+        </script>
+    </body>
+</html>
